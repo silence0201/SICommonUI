@@ -15,6 +15,7 @@
 		E8A684F6225F7CC000D4650C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A684F5225F7CC000D4650C /* main.m */; };
 		E8A684FF225F7D0900D4650C /* SIPopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A684FE225F7D0900D4650C /* SIPopoverViewCell.m */; };
 		E8A68502225F7D4500D4650C /* SIPopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A68501225F7D4500D4650C /* SIPopoverAction.m */; };
+		E8DAC0BE2260B48E0018918C /* SIPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DAC0BD2260B48E0018918C /* SIPopoverView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		E8A684FE225F7D0900D4650C /* SIPopoverViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIPopoverViewCell.m; sourceTree = "<group>"; };
 		E8A68500225F7D4500D4650C /* SIPopoverAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIPopoverAction.h; sourceTree = "<group>"; };
 		E8A68501225F7D4500D4650C /* SIPopoverAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIPopoverAction.m; sourceTree = "<group>"; };
+		E8DAC0BC2260B48E0018918C /* SIPopoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIPopoverView.h; sourceTree = "<group>"; };
+		E8DAC0BD2260B48E0018918C /* SIPopoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIPopoverView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				E8A684FE225F7D0900D4650C /* SIPopoverViewCell.m */,
 				E8A68500225F7D4500D4650C /* SIPopoverAction.h */,
 				E8A68501225F7D4500D4650C /* SIPopoverAction.m */,
+				E8DAC0BC2260B48E0018918C /* SIPopoverView.h */,
+				E8DAC0BD2260B48E0018918C /* SIPopoverView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			files = (
 				E8A684FF225F7D0900D4650C /* SIPopoverViewCell.m in Sources */,
 				E8A684EB225F7CBF00D4650C /* ViewController.m in Sources */,
+				E8DAC0BE2260B48E0018918C /* SIPopoverView.m in Sources */,
 				E8A68502225F7D4500D4650C /* SIPopoverAction.m in Sources */,
 				E8A684F6225F7CC000D4650C /* main.m in Sources */,
 				E8A684E8225F7CBF00D4650C /* AppDelegate.m in Sources */,

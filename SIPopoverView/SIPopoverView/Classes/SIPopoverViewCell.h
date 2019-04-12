@@ -16,10 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SIPopoverViewCell : UITableViewCell
 
-@property (nonatomic, assign) PopoverViewStyle style;
+@property (nonatomic, assign) SIPopoverViewStyle style;
 
 // 重写实现自定义样式
-- (UIFont *)titleFont;
++ (UIFont *)titleFont;
 - (UIColor *)titleColor:(SIPopoverViewStyle)style;
 - (UIColor *)highlightedColor:(SIPopoverViewStyle)style;
 

@@ -62,7 +62,7 @@ CGFloat const SIPopoverViewCellTitleLeftEdge = 8.f;
         _button.translatesAutoresizingMaskIntoConstraints = NO;
         _button.backgroundColor = self.contentView.backgroundColor;
         _button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-        _button.titleLabel.font = [self titleFont];
+        _button.titleLabel.font = [self.class titleFont];
         [_button setTitleColor:[self titleColor:SIPopoverViewStyleDefault] forState:UIControlStateNormal];
     }
     return _button;
@@ -78,7 +78,7 @@ CGFloat const SIPopoverViewCellTitleLeftEdge = 8.f;
 }
 
 #pragma mark -- 供重写
-- (UIFont *)titleFont {
++ (UIFont *)titleFont {
     UIFont *font = [UIFont fontWithName:@"PingFangSC-Regular" size:15];//这个是9.0以后自带的平方字体
     if (!font) font = [UIFont systemFontOfSize:15];
     return font;
