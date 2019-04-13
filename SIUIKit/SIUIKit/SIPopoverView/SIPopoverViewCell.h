@@ -6,14 +6,13 @@
 //  Copyright © 2019年 Silence. All rights reserved.
 //
 
-#import "SIPopoverAction.h"
+#import "SIPopoverView.h"
 
 FOUNDATION_EXPORT CGFloat const SIPopoverViewCellHorizontalMargin;
 FOUNDATION_EXPORT CGFloat const SIPopoverViewCellVerticalMargin;
 FOUNDATION_EXPORT CGFloat const SIPopoverViewCellTitleLeftEdge;
 
 NS_ASSUME_NONNULL_BEGIN
-
 @interface SIPopoverViewCell : UITableViewCell
 
 @property (nonatomic, assign) SIPopoverViewStyle style;

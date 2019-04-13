@@ -6,7 +6,12 @@
 //  Copyright © 2019年 Silence. All rights reserved.
 //
 
-#import "SIPopoverAction.h"
+#import <UIKit/UIKit.h>
+
+typedef NS_ENUM(NSUInteger, SIPopoverViewStyle) {
+    SIPopoverViewStyleDefault = 0, // 默认风格, 白色
+    SIPopoverViewStyleDark, // 黑色风格
+};
 
 // 弹窗箭头的样式
 typedef NS_ENUM(NSUInteger, SIPopoverViewArrowStyle) {
@@ -14,7 +19,24 @@ typedef NS_ENUM(NSUInteger, SIPopoverViewArrowStyle) {
     SIPopoverViewArrowStyleTriangle   // 菱角
 };
 
+// 重用Cell标识,用于重写自定义样式
+FOUNDATION_EXPORT NSString *kPopoverCellReuseId;
+
 NS_ASSUME_NONNULL_BEGIN
+
+@class SIPopoverAction;
+typedef void(^PopClickAction)(SIPopoverAction *action);
+
+@interface SIPopoverAction : NSObject
+
+@property (strong, nonatomic, readonly) UIImage *image;
+@property (copy, nonatomic, readonly) NSString *title;
+@property (copy, nonatomic, readonly) PopClickAction action;
+
++ (instancetype)actionWithTitle:(NSString *)title action:(PopClickAction)action;
++ (instancetype)actionWithImage:(nullable UIImage *)image title:(NSString *)title action:(PopClickAction)action;
+
+@end
 
 @interface SIPopoverView : UIView
 
@@ -49,6 +71,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)showToPoint:(CGPoint)toPoint withActions:(NSArray<SIPopoverAction *> *)actions;
 
 
+/// 重写覆盖,并实现TableView的代理即可
+@property (nonatomic, copy, readonly) NSArray<SIPopoverAction *> *actions;
 + (Class)cellClass;
 
 @end

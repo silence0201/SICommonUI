@@ -13,11 +13,36 @@ static CGFloat const kPopoverViewMargin = 8.f;        ///< 边距
 static CGFloat const kPopoverViewCellHeight = 40.f;   ///< cell指定高度
 static CGFloat const kPopoverViewArrowHeight = 13.f;  ///< 箭头高度
 
-static NSString *kPopoverCellReuseId = @"_PopoverCellReuseId";
+NSString *kPopoverCellReuseId = @"_PopoverCellReuseId";
 
 float PopoverViewDegreesToRadians(float angle) {
     return angle*M_PI/180;
 }
+
+@interface SIPopoverAction ()
+
+@property (strong, nonatomic, readwrite) UIImage *image;
+@property (copy, nonatomic,readwrite) NSString *title;
+@property (copy, nonatomic, readwrite) PopClickAction action;
+
+@end
+
+@implementation SIPopoverAction
+
++ (instancetype)actionWithTitle:(NSString *)title action:(PopClickAction)action {
+    return [self actionWithImage:nil title:title action:action];
+}
+
++ (instancetype)actionWithImage:(nullable UIImage *)image title:(NSString *)title action:(PopClickAction)action {
+    SIPopoverAction *popoverAction = [[self alloc]init];
+    popoverAction.image = image;
+    popoverAction.title = title ?: @"";
+    popoverAction.action = action;
+    
+    return popoverAction;
+}
+
+@end
 
 @interface SIPopoverView ()<UITableViewDelegate, UITableViewDataSource>
 

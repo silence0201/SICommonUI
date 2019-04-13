@@ -27,13 +27,11 @@
 		E8A0BEB52261DF42004F5764 /* SIPopoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A0BEA92261DF41004F5764 /* SIPopoverView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8A0BEB72261DF42004F5764 /* SIPopoverViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A0BEAB2261DF41004F5764 /* SIPopoverViewCell.h */; };
 		E8A0BEB82261DF42004F5764 /* SIPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A0BEAC2261DF41004F5764 /* SIPopoverView.m */; };
-		E8A0BEB92261DF42004F5764 /* SIPopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A0BEAD2261DF41004F5764 /* SIPopoverAction.m */; };
 		E8A0BEBA2261DF42004F5764 /* SIPopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A0BEAE2261DF41004F5764 /* SIPopoverViewCell.m */; };
 		E8A0BEBB2261DF42004F5764 /* SIPopView.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A0BEB02261DF41004F5764 /* SIPopView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8A0BEBC2261DF42004F5764 /* SIPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A0BEB12261DF41004F5764 /* SIPopView.m */; };
 		E8A0BEBD2261DF42004F5764 /* SIShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A0BEB32261DF41004F5764 /* SIShadowView.m */; };
 		E8A0BEBE2261DF42004F5764 /* SIShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A0BEB42261DF41004F5764 /* SIShadowView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8AB1738226202B900C2A230 /* SIPopoverAction.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A0BEAA2261DF41004F5764 /* SIPopoverAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,10 +41,8 @@
 		E8A0BE9A2261DDB5004F5764 /* SIUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIUIKit.h; sourceTree = "<group>"; };
 		E8A0BE9B2261DDB5004F5764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8A0BEA92261DF41004F5764 /* SIPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPopoverView.h; sourceTree = "<group>"; };
-		E8A0BEAA2261DF41004F5764 /* SIPopoverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPopoverAction.h; sourceTree = "<group>"; };
 		E8A0BEAB2261DF41004F5764 /* SIPopoverViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPopoverViewCell.h; sourceTree = "<group>"; };
 		E8A0BEAC2261DF41004F5764 /* SIPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPopoverView.m; sourceTree = "<group>"; };
-		E8A0BEAD2261DF41004F5764 /* SIPopoverAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPopoverAction.m; sourceTree = "<group>"; };
 		E8A0BEAE2261DF41004F5764 /* SIPopoverViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPopoverViewCell.m; sourceTree = "<group>"; };
 		E8A0BEB02261DF41004F5764 /* SIPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIPopView.h; sourceTree = "<group>"; };
 		E8A0BEB12261DF41004F5764 /* SIPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPopView.m; sourceTree = "<group>"; };
@@ -108,10 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				E8A0BEA92261DF41004F5764 /* SIPopoverView.h */,
-				E8A0BEAA2261DF41004F5764 /* SIPopoverAction.h */,
-				E8A0BEAB2261DF41004F5764 /* SIPopoverViewCell.h */,
 				E8A0BEAC2261DF41004F5764 /* SIPopoverView.m */,
-				E8A0BEAD2261DF41004F5764 /* SIPopoverAction.m */,
+				E8A0BEAB2261DF41004F5764 /* SIPopoverViewCell.h */,
 				E8A0BEAE2261DF41004F5764 /* SIPopoverViewCell.m */,
 			);
 			path = SIPopoverView;
@@ -161,7 +155,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8A0BE9C2261DDB5004F5764 /* SIUIKit.h in Headers */,
-				E8AB1738226202B900C2A230 /* SIPopoverAction.h in Headers */,
 				E8A0BEB52261DF42004F5764 /* SIPopoverView.h in Headers */,
 				E8A0BEBE2261DF42004F5764 /* SIShadowView.h in Headers */,
 				E8A0BEBB2261DF42004F5764 /* SIPopView.h in Headers */,
@@ -295,7 +288,6 @@
 				E8A0BEBC2261DF42004F5764 /* SIPopView.m in Sources */,
 				E8A0BEB82261DF42004F5764 /* SIPopoverView.m in Sources */,
 				E8A0BEBA2261DF42004F5764 /* SIPopoverViewCell.m in Sources */,
-				E8A0BEB92261DF42004F5764 /* SIPopoverAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
