@@ -1,0 +1,6 @@
+framework module SIUIKit {
+  umbrella header "SIUIKit.h"
+
+  export *
+  module * { export * }
+}
