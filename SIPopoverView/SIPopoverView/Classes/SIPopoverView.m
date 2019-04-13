@@ -57,13 +57,42 @@ float PopoverViewDegreesToRadians(float angle) {
         [_shadeView addGestureRecognizer:tapGesture];
         _tapGesture = tapGesture;
         // tableView
-        [self.tableView registerClass:[self cellClass] forCellReuseIdentifier:kPopoverCellReuseId];
+        [self.tableView registerClass:[self.class cellClass] forCellReuseIdentifier:kPopoverCellReuseId];
         [self addSubview:self.tableView];
     }
     return self;
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    _tableView.frame = CGRectMake(0, _isUpward ? kPopoverViewArrowHeight : 0,
+                                  CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds) - kPopoverViewArrowHeight);
+}
+
 #pragma mark -- Setter
+- (void)setHideAfterTouchOutside:(BOOL)hideAfterTouchOutside {
+    _hideAfterTouchOutside = hideAfterTouchOutside;
+    _tapGesture.enabled = _hideAfterTouchOutside;
+}
+
+- (void)setShowShade:(BOOL)showShade {
+    _showShade = showShade;
+    _shadeView.backgroundColor = _showShade ? [UIColor colorWithWhite:0.f alpha:0.18f] : [UIColor clearColor];
+    if (_borderLayer) {
+        _borderLayer.strokeColor = _showShade ? [UIColor clearColor].CGColor : _tableView.separatorColor.CGColor;
+    }
+}
+
+- (void)setStyle:(SIPopoverViewStyle)style {
+    _style = style;
+    _tableView.separatorColor = [SIPopoverViewCell bottomLineColorForStyle:_style];
+    if (_style == SIPopoverViewStyleDefault) {
+        self.backgroundColor = [UIColor whiteColor];
+    } else {
+        self.backgroundColor = [UIColor colorWithRed:0.29 green:0.29 blue:0.29 alpha:1.00];
+    }
+}
 
 #pragma mark -- Getter
 - (UITableView *)tableView {
@@ -362,7 +391,7 @@ float PopoverViewDegreesToRadians(float angle) {
     [self showToPoint:toPoint];
 }
 
-- (Class)cellClass {
++ (Class)cellClass {
     return [SIPopoverViewCell class];
 }
 
