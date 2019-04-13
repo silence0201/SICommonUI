@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5O3-z7-cPa">
+            <objects>
+                <viewController storyboardIdentifier="test" id="oUX-nf-BQ7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P4w-bh-ldT"/>
+                        <viewControllerLayoutGuide type="bottom" id="zJm-Ek-tpm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Aze-to-LvM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QKB-lr-izY">
+                                <rect key="frame" x="36" y="60" width="303" height="419.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QKB-lr-izY" secondAttribute="height" multiplier="13:18" id="rzo-Ne-amg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QKB-lr-izY" firstAttribute="leading" secondItem="Aze-to-LvM" secondAttribute="leadingMargin" constant="20" id="92I-oG-Ivp"/>
+                            <constraint firstItem="QKB-lr-izY" firstAttribute="top" secondItem="P4w-bh-ldT" secondAttribute="bottom" constant="40" id="9Cw-sp-jO4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QKB-lr-izY" secondAttribute="trailing" constant="20" id="zJr-gN-qos"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mPS-HN-bzN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-415.19999999999999" y="144.3778110944528"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="test.jpg" width="1300" height="1744"/>
+    </resources>
+</document>

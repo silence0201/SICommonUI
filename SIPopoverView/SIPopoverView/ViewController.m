@@ -26,6 +26,7 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 
 @implementation ViewController
 
+
 - (NSArray<SIPopoverAction *> *)actions {
     // 发起多人聊天 action
     SIPopoverAction *multichatAction = [SIPopoverAction actionWithImage:[UIImage imageNamed:@"right_menu_multichat"] title:@"发起多人聊天" action:^(SIPopoverAction * _Nonnull action) {
@@ -62,6 +63,15 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
     popoverView.arrowStyle = SIPopoverViewArrowStyleTriangle;
     popoverView.style = SIPopoverViewStyleDark;
     [popoverView showToPoint:CGPointMake(20, STATUS_BAR_ANDNAVIGATION_BAR_HEIGHT) withActions:[self actions]];
+}
+
+- (IBAction)bundleTest:(id)sender {
+    NSString *testPath = [[NSBundle mainBundle] pathForResource:@"SIUIKitBundle" ofType:@"bundle"];
+    NSBundle *testBundle = [NSBundle bundleWithPath:testPath];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Test" bundle:testBundle];
+    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"test"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		E8012013226209990051E3E6 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8012012226209990051E3E6 /* Test.storyboard */; };
+		E8012019226210660051E3E6 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8012018226210660051E3E6 /* test.jpg */; };
 		E8A0BE9C2261DDB5004F5764 /* SIUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A0BE9A2261DDB5004F5764 /* SIUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8A0BEB52261DF42004F5764 /* SIPopoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A0BEA92261DF41004F5764 /* SIPopoverView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8A0BEB72261DF42004F5764 /* SIPopoverViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A0BEAB2261DF41004F5764 /* SIPopoverViewCell.h */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E8012012226209990051E3E6 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		E8012018226210660051E3E6 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		E8A0BE972261DDB5004F5764 /* SIUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SIUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A0BE9A2261DDB5004F5764 /* SIUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIUIKit.h; sourceTree = "<group>"; };
 		E8A0BE9B2261DDB5004F5764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,10 +52,19 @@
 		E8A0BEB12261DF41004F5764 /* SIPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIPopView.m; sourceTree = "<group>"; };
 		E8A0BEB32261DF41004F5764 /* SIShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIShadowView.m; sourceTree = "<group>"; };
 		E8A0BEB42261DF41004F5764 /* SIShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIShadowView.h; sourceTree = "<group>"; };
+		E8AB17612262053900C2A230 /* SIUIKitBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIUIKitBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8AB17632262053900C2A230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E8A0BE942261DDB5004F5764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8AB175E2262053900C2A230 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				E8A0BE992261DDB5004F5764 /* SIUIKit */,
+				E8AB17622262053900C2A230 /* SIUIKitBundle */,
 				E8A0BE982261DDB5004F5764 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				E8A0BE972261DDB5004F5764 /* SIUIKit.framework */,
+				E8AB17612262053900C2A230 /* SIUIKitBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +135,24 @@
 			path = SIShadowView;
 			sourceTree = "<group>";
 		};
+		E8AB17622262053900C2A230 /* SIUIKitBundle */ = {
+			isa = PBXGroup;
+			children = (
+				E8AB1767226205D600C2A230 /* Image */,
+				E8AB17632262053900C2A230 /* Info.plist */,
+				E8012012226209990051E3E6 /* Test.storyboard */,
+			);
+			path = SIUIKitBundle;
+			sourceTree = "<group>";
+		};
+		E8AB1767226205D600C2A230 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				E8012018226210660051E3E6 /* test.jpg */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -157,6 +190,23 @@
 			productReference = E8A0BE972261DDB5004F5764 /* SIUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		E8AB17602262053900C2A230 /* SIUIKitBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8AB17642262053900C2A230 /* Build configuration list for PBXNativeTarget "SIUIKitBundle" */;
+			buildPhases = (
+				E8AB175D2262053900C2A230 /* Sources */,
+				E8AB175E2262053900C2A230 /* Frameworks */,
+				E8AB175F2262053900C2A230 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SIUIKitBundle;
+			productName = SIUIKitBundle;
+			productReference = E8AB17612262053900C2A230 /* SIUIKitBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,6 +220,9 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					E8A0BEC82261E274004F5764 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E8AB17602262053900C2A230 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -187,6 +240,7 @@
 			projectRoot = "";
 			targets = (
 				E8A0BE962261DDB5004F5764 /* SIUIKit */,
+				E8AB17602262053900C2A230 /* SIUIKitBundle */,
 				E8A0BEC82261E274004F5764 /* SIUIKitRelease */,
 			);
 		};
@@ -197,6 +251,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8AB175F2262053900C2A230 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8012013226209990051E3E6 /* Test.storyboard in Resources */,
+				E8012019226210660051E3E6 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +282,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/usr/bin/env bash\nFramework_Name=\"SIUIKit\"\nProject_Name=\"SIUIKit\"\nFramework_config=Release\nuse_workspace=\"false\"\n\necho \"Start...\"\n# 清理文件夹,生成目录\nWRK_DIR=\"$(pwd)/FrameWork\"\nif [ -d \"${WRK_DIR}\" ]; then\n    rm -rf \"${WRK_DIR}\"\n    mkdir \"${WRK_DIR}\"\nelse\n    mkdir \"${WRK_DIR}\"\nfi\n\necho \"Start Build...\"\nif $use_workspace; then\n\n    xcodebuild clean build -workspace \"${Project_Name}.xcworkspace\" \\\n                            -configuration ${Framework_config} \\\n                            -scheme \"${Framework_Name}\" SYMROOT=\"${WRK_DIR}\" \\\n                            -UseModernBuildSystem=NO \\\n                            -sdk iphoneos\n\n\n    xcodebuild clean build -workspace \"${Project_Name}.xcworkspace\" \\\n                            -configuration ${Framework_config} \\\n                            -scheme \"${Framework_Name}\" SYMROOT=\"${WRK_DIR}\" \\\n                            -UseModernBuildSystem=NO \\\n                            -sdk iphonesimulator\n\nelse\n\n    xcodebuild clean build -configuration ${Framework_config} \\\n                            -scheme \"${Framework_Name}\" SYMROOT=\"${WRK_DIR}\" \\\n                            -UseModernBuildSystem=NO \\\n                            -sdk iphoneos\n\n\n    xcodebuild clean build -configuration ${Framework_config} \\\n                            -scheme \"${Framework_Name}\" SYMROOT=\"${WRK_DIR}\" \\\n                            -UseModernBuildSystem=NO \\\n                            -sdk iphonesimulator\n\nfi\n\necho \"Finish Build...\"\n\necho \"Start Merge...\"\n\nINSTALL_DIR=${SRCROOT}/Products/${Framework_Name}.framework\n\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${Framework_Name}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${Framework_Name}.framework\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nmkdir -p ${SRCROOT}/Products\n\ncp -rf ${DEVICE_DIR} ${SRCROOT}/Products\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${Framework_Name}\" \"${SIMULATOR_DIR}/${Framework_Name}\" -output \"${INSTALL_DIR}/${Framework_Name}\"\n\n\nrm -r \"${WRK_DIR}\"\n\n# if [ -d \"${INSTALL_DIR}/_CodeSignature\" ]\n# then\n# rm -rf \"${INSTALL_DIR}/_CodeSignature\"\n# fi\n\n# if [ -f \"${INSTALL_DIR}/Info.plist\" ]\n# then\n# rm \"${INSTALL_DIR}/Info.plist\"\n# fi\n\nopen ${SRCROOT}/Products\n\necho \"Finish Merge...\"\n";
+			shellScript = "#!/usr/bin/env bash\nFramework_Name=\"SIUIKit\"\nProject_Name=\"SIUIKit\"\nFramework_config=Release\nuse_workspace=\"false\"\n\nBundle_Name=\"SIUIKitBundle\"\nuse_bundle=\"true\"\n\necho \"Start...\"\n# 清理文件夹,生成目录\nWRK_DIR=\"$(pwd)/FrameWork\"\nif [ -d \"${WRK_DIR}\" ]; then\n    rm -rf \"${WRK_DIR}\"\n    mkdir \"${WRK_DIR}\"\nelse\n    mkdir \"${WRK_DIR}\"\nfi\n\necho \"Start Build...\"\nif $use_workspace; then\n\n    xcodebuild clean build  -workspace \"${Project_Name}.xcworkspace\" \\\n                            -configuration ${Framework_config} \\\n                            -scheme \"${Framework_Name}\" SYMROOT=\"${WRK_DIR}\" \\\n                            -UseModernBuildSystem=NO \\\n                            -sdk iphoneos\n\n\n    xcodebuild clean build  -workspace \"${Project_Name}.xcworkspace\" \\\n                            -configuration ${Framework_config} \\\n                            -scheme \"${Framework_Name}\" SYMROOT=\"${WRK_DIR}\" \\\n                            -UseModernBuildSystem=NO \\\n                            -sdk iphonesimulator\n\n    #bundle\n    if $use_bundle; then\n        xcodebuild clean build  -workspace \"${Project_Name}.xcworkspace\" \\\n                                -configuration ${Framework_config} \\\n                                -scheme \"${Bundle_Name}\" SYMROOT=\"${WRK_DIR}\" \\\n                                -UseModernBuildSystem=NO \\\n                                -sdk iphoneos\n\nfi\n\nelse\n\n    xcodebuild clean build  -configuration ${Framework_config} \\\n                            -scheme \"${Framework_Name}\" SYMROOT=\"${WRK_DIR}\" \\\n                            -UseModernBuildSystem=NO \\\n                            -sdk iphoneos\n\n\n    xcodebuild clean build  -configuration ${Framework_config} \\\n                            -scheme \"${Framework_Name}\" SYMROOT=\"${WRK_DIR}\" \\\n                            -UseModernBuildSystem=NO \\\n                            -sdk iphonesimulator\n\n    #bundle\n    if $use_bundle; then\n        xcodebuild clean build  -configuration ${Framework_config} \\\n                                -scheme \"${Bundle_Name}\" SYMROOT=\"${WRK_DIR}\" \\\n                                -UseModernBuildSystem=NO \\\n                                -sdk iphoneos\n\nfi\n\nfi\n\necho \"Finish Build...\"\n\necho \"Start Merge...\"\n\nProduct_DIR=${SRCROOT}/Products\nINSTALL_DIR=${Product_DIR}/${Framework_Name}.framework\n\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${Framework_Name}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${Framework_Name}.framework\n\n# Cleaning the oldest.\nif [ -d \"${Product_DIR}\" ]\nthen\nrm -rf \"${Product_DIR}\"\nfi\nmkdir -p ${SRCROOT}/Products\n\ncp -rf ${DEVICE_DIR} ${SRCROOT}/Products\ncp -rf ${WRK_DIR}/Release-iphoneos/${Bundle_Name}.bundle ${SRCROOT}/Products\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${Framework_Name}\" \"${SIMULATOR_DIR}/${Framework_Name}\" -output \"${INSTALL_DIR}/${Framework_Name}\"\n\n\nrm -r \"${WRK_DIR}\"\n\n# if [ -d \"${INSTALL_DIR}/_CodeSignature\" ]\n# then\n# rm -rf \"${INSTALL_DIR}/_CodeSignature\"\n# fi\n\n# if [ -f \"${INSTALL_DIR}/Info.plist\" ]\n# then\n# rm \"${INSTALL_DIR}/Info.plist\"\n# fi\n\nopen ${SRCROOT}/Products\n\necho \"Finish Merge...\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -233,6 +296,13 @@
 				E8A0BEB82261DF42004F5764 /* SIPopoverView.m in Sources */,
 				E8A0BEBA2261DF42004F5764 /* SIPopoverViewCell.m in Sources */,
 				E8A0BEB92261DF42004F5764 /* SIPopoverAction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8AB175D2262053900C2A230 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +501,48 @@
 			};
 			name = Release;
 		};
+		E8AB17652262053900C2A230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SIUIKitBundle/Info.plist;
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.SIUIKitBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E8AB17662262053900C2A230 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SIUIKitBundle/Info.plist;
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.SIUIKitBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -457,6 +569,15 @@
 			buildConfigurations = (
 				E8A0BECA2261E274004F5764 /* Debug */,
 				E8A0BECB2261E274004F5764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8AB17642262053900C2A230 /* Build configuration list for PBXNativeTarget "SIUIKitBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8AB17652262053900C2A230 /* Debug */,
+				E8AB17662262053900C2A230 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
