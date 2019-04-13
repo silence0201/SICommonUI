@@ -16,8 +16,8 @@ FOUNDATION_EXPORT const unsigned char SIUIKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SIUIKit/PublicHeader.h>
 
-#import "SIPopView.h"
-#import "SIShadowView.h"
-#import "SIPopoverView.h"
+#import <SIUIKit/SIPopView.h>
+#import <SIUIKit/SIShadowView.h>
+#import <SIUIKit/SIPopoverView.h>
 
 
