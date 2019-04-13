@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SIPopoverView.h"
+#import <SIUIKit/SIPopoverView.h>
 
 #define IS_IPHONE_X_ALL \
 ({BOOL isPhoneX = NO;\

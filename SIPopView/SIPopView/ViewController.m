@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SIPopView.h"
+#import <SIUIKit/SIPopView.h>
 #import "CustomAlertView.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>

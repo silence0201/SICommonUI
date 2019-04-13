@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8A0BEC72261E02A004F5764 /* SIUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A0BEC62261E02A004F5764 /* SIUIKit.framework */; };
 		E8A684E8225F7CBF00D4650C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A684E7225F7CBF00D4650C /* AppDelegate.m */; };
 		E8A684EB225F7CBF00D4650C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A684EA225F7CBF00D4650C /* ViewController.m */; };
 		E8A684EE225F7CBF00D4650C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A684EC225F7CBF00D4650C /* Main.storyboard */; };
 		E8A684F0225F7CC000D4650C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A684EF225F7CC000D4650C /* Assets.xcassets */; };
 		E8A684F3225F7CC000D4650C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A684F1225F7CC000D4650C /* LaunchScreen.storyboard */; };
 		E8A684F6225F7CC000D4650C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A684F5225F7CC000D4650C /* main.m */; };
-		E8A684FF225F7D0900D4650C /* SIPopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A684FE225F7D0900D4650C /* SIPopoverViewCell.m */; };
-		E8A68502225F7D4500D4650C /* SIPopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A68501225F7D4500D4650C /* SIPopoverAction.m */; };
-		E8DAC0BE2260B48E0018918C /* SIPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DAC0BD2260B48E0018918C /* SIPopoverView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E8A0BEC62261E02A004F5764 /* SIUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SIUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A684E3225F7CBF00D4650C /* SIPopoverView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIPopoverView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A684E6225F7CBF00D4650C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E8A684E7225F7CBF00D4650C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,12 +28,6 @@
 		E8A684F2225F7CC000D4650C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8A684F4225F7CC000D4650C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8A684F5225F7CC000D4650C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E8A684FD225F7D0900D4650C /* SIPopoverViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIPopoverViewCell.h; sourceTree = "<group>"; };
-		E8A684FE225F7D0900D4650C /* SIPopoverViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIPopoverViewCell.m; sourceTree = "<group>"; };
-		E8A68500225F7D4500D4650C /* SIPopoverAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIPopoverAction.h; sourceTree = "<group>"; };
-		E8A68501225F7D4500D4650C /* SIPopoverAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIPopoverAction.m; sourceTree = "<group>"; };
-		E8DAC0BC2260B48E0018918C /* SIPopoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIPopoverView.h; sourceTree = "<group>"; };
-		E8DAC0BD2260B48E0018918C /* SIPopoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIPopoverView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,17 +35,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A0BEC72261E02A004F5764 /* SIUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E8A0BEC52261E02A004F5764 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8A0BEC62261E02A004F5764 /* SIUIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E8A684DA225F7CBF00D4650C = {
 			isa = PBXGroup;
 			children = (
 				E8A684E5225F7CBF00D4650C /* SIPopoverView */,
 				E8A684E4225F7CBF00D4650C /* Products */,
+				E8A0BEC52261E02A004F5764 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,7 +70,6 @@
 		E8A684E5225F7CBF00D4650C /* SIPopoverView */ = {
 			isa = PBXGroup;
 			children = (
-				E8A684FC225F7CC400D4650C /* Classes */,
 				E8A684E6225F7CBF00D4650C /* AppDelegate.h */,
 				E8A684E7225F7CBF00D4650C /* AppDelegate.m */,
 				E8A684E9225F7CBF00D4650C /* ViewController.h */,
@@ -79,19 +81,6 @@
 				E8A684F5225F7CC000D4650C /* main.m */,
 			);
 			path = SIPopoverView;
-			sourceTree = "<group>";
-		};
-		E8A684FC225F7CC400D4650C /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E8A684FD225F7D0900D4650C /* SIPopoverViewCell.h */,
-				E8A684FE225F7D0900D4650C /* SIPopoverViewCell.m */,
-				E8A68500225F7D4500D4650C /* SIPopoverAction.h */,
-				E8A68501225F7D4500D4650C /* SIPopoverAction.m */,
-				E8DAC0BC2260B48E0018918C /* SIPopoverView.h */,
-				E8DAC0BD2260B48E0018918C /* SIPopoverView.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,10 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8A684FF225F7D0900D4650C /* SIPopoverViewCell.m in Sources */,
 				E8A684EB225F7CBF00D4650C /* ViewController.m in Sources */,
-				E8DAC0BE2260B48E0018918C /* SIPopoverView.m in Sources */,
-				E8A68502225F7D4500D4650C /* SIPopoverAction.m in Sources */,
 				E8A684F6225F7CC000D4650C /* main.m in Sources */,
 				E8A684E8225F7CBF00D4650C /* AppDelegate.m in Sources */,
 			);

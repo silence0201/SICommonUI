@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SIShadowView.h"
+#import <SIUIKit/SIShadowView.h>
 
 @interface ViewController () {
     UIScrollView *scroll;

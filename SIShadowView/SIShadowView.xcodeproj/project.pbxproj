@@ -13,7 +13,7 @@
 		E84977FD225E407E00D39D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E84977FC225E407E00D39D25 /* Assets.xcassets */; };
 		E8497800225E407E00D39D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84977FE225E407E00D39D25 /* LaunchScreen.storyboard */; };
 		E8497803225E407E00D39D25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8497802225E407E00D39D25 /* main.m */; };
-		E849780D225E40B000D39D25 /* SIShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E849780C225E40B000D39D25 /* SIShadowView.m */; };
+		E8A0BEC12261E00C004F5764 /* SIUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A0BEC02261E00C004F5764 /* SIUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,7 @@
 		E84977FF225E407E00D39D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8497801225E407E00D39D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8497802225E407E00D39D25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E849780B225E40B000D39D25 /* SIShadowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIShadowView.h; sourceTree = "<group>"; };
-		E849780C225E40B000D39D25 /* SIShadowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIShadowView.m; sourceTree = "<group>"; };
+		E8A0BEC02261E00C004F5764 /* SIUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SIUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A0BEC12261E00C004F5764 /* SIUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +47,7 @@
 			children = (
 				E84977F2225E407D00D39D25 /* SIShadowView */,
 				E84977F1225E407D00D39D25 /* Products */,
+				E8A0BEBF2261E00C004F5764 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,7 +62,6 @@
 		E84977F2225E407D00D39D25 /* SIShadowView */ = {
 			isa = PBXGroup;
 			children = (
-				E849780A225E409700D39D25 /* Classes */,
 				E84977F3225E407D00D39D25 /* AppDelegate.h */,
 				E84977F4225E407D00D39D25 /* AppDelegate.m */,
 				E84977F6225E407D00D39D25 /* ViewController.h */,
@@ -75,13 +75,12 @@
 			path = SIShadowView;
 			sourceTree = "<group>";
 		};
-		E849780A225E409700D39D25 /* Classes */ = {
+		E8A0BEBF2261E00C004F5764 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E849780B225E40B000D39D25 /* SIShadowView.h */,
-				E849780C225E40B000D39D25 /* SIShadowView.m */,
+				E8A0BEC02261E00C004F5764 /* SIUIKit.framework */,
 			);
-			path = Classes;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +155,6 @@
 			files = (
 				E84977F8225E407D00D39D25 /* ViewController.m in Sources */,
 				E8497803225E407E00D39D25 /* main.m in Sources */,
-				E849780D225E40B000D39D25 /* SIShadowView.m in Sources */,
 				E84977F5225E407D00D39D25 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
