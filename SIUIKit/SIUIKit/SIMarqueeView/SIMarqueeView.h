@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class SIMarqueeView;
 @interface SIMarqueeViewCell : UIView
 
 @property (nonatomic, strong, readonly) UIView   *contentView;
@@ -18,6 +19,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+
+@end
+
+@protocol SIMarqueeViewDataSource <NSObject>
+@required
+- (NSInteger)numberOfRowsInMarqueeView:(SIMarqueeView *)marqueeView;
+- (SIMarqueeViewCell *)marqueeView:(SIMarqueeView*)marqueeView cellForRow:(NSUInteger)index;
+@end
+
+@protocol SIMarqueeViewDelegate <NSObject>
+@optional
+- (void)marqueeView:(SIMarqueeView *)marqueeView didClickRow:(NSUInteger)index;
 
 @end
 
