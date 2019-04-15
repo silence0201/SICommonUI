@@ -36,6 +36,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SIMarqueeView : UIView
 
+@property (nonatomic, weak) id<SIMarqueeViewDataSource> dataSource;
+@property (nonatomic, weak) id<SIMarqueeViewDelegate> delegate;
+
+/// 停留时间,默认3s
+@property (nonatomic, assign) NSTimeInterval stayInterval;
+/// 当前选择index
+@property (nonatomic, assign, readonly) NSUInteger currentIndex;
+
+- (void)registerClass:(Class)cellClass forCellReuseIdentifier:(NSString *)identifier;
+- (void)registerNib:(UINib *)nib forCellReuseIdentifier:(NSString *)identifier;
+
+- (void)reloadDataAndStartRoll;
+- (void)stopRoll;
+
 @end
 
 NS_ASSUME_NONNULL_END
