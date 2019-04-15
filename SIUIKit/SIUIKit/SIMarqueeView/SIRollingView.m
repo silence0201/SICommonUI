@@ -1,14 +1,14 @@
 //
-//  SIMarqueeView.m
+//  SIRollingView.m
 //  SIUIKit
 //
 //  Created by Silence on 2019/4/15.
 //  Copyright © 2019年 Silence. All rights reserved.
 //
 
-#import "SIMarqueeView.h"
+#import "SIRollingView.h"
 
-@implementation SIMarqueeViewCell
+@implementation SIRollingViewCell
 
 - (instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithFrame:CGRectZero]) {
@@ -43,19 +43,19 @@
 
 @end
 
-@interface SIMarqueeView ()
+@interface SIRollingView ()
 
 @property (nonatomic, strong) NSMutableDictionary *cellClsDict;
 @property (nonatomic, strong) NSMutableArray *reuseCells;
 
 @property (nonatomic, strong) NSTimer *timer;
-@property (nonatomic, strong) SIMarqueeViewCell *currentCell;
-@property (nonatomic, strong) SIMarqueeViewCell *willShowCell;
+@property (nonatomic, strong) SIRollingViewCell *currentCell;
+@property (nonatomic, strong) SIRollingViewCell *willShowCell;
 @property (nonatomic, assign) BOOL isAnimating;
 
 @end
 
-@implementation SIMarqueeView
+@implementation SIRollingView
 
 #pragma mark -- Init
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -92,7 +92,7 @@
 - (void)reloadDataAndStartRoll {
     [self stopRoll];
     [self layoutCurrentCellAndWillShowCell];
-    NSUInteger count = [self.dataSource numberOfRowsInMarqueeView:self];
+    NSUInteger count = [self.dataSource numberOfRowsInrollingView:self];
     if (count && count < 2) {
         return;
     }
@@ -102,15 +102,15 @@
 }
 
 #pragma mark -- Private
-- (__kindof SIMarqueeViewCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier {
-    for (SIMarqueeViewCell *cell in self.reuseCells) {
+- (__kindof SIRollingViewCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier {
+    for (SIRollingViewCell *cell in self.reuseCells) {
         if ([cell.restorationIdentifier isEqualToString:identifier]) {
             return cell;
         }
     }
     
     id cellClass = self.cellClsDict[identifier];
-    SIMarqueeViewCell *cell = nil;
+    SIRollingViewCell *cell = nil;
     if ([cellClass isKindOfClass:[UINib class]]) {
         UINib *nib = (UINib *)cellClass;
         NSArray *arr = [nib instantiateWithOwner:nil options:nil];
@@ -124,7 +124,7 @@
 }
 
 - (void)layoutCurrentCellAndWillShowCell {
-    NSUInteger count = (int)[self.dataSource numberOfRowsInMarqueeView:self];
+    NSUInteger count = (int)[self.dataSource numberOfRowsInrollingView:self];
     if (_currentIndex > count - 1) {
         _currentIndex = 0;
     }
@@ -137,13 +137,13 @@
     float h = self.frame.size.height;
     
     if (!_currentCell) {
-        _currentCell = [self.dataSource marqueeView:self cellForRow:_currentIndex];
+        _currentCell = [self.dataSource rollingView:self cellForRow:_currentIndex];
         _currentCell.frame  = CGRectMake(0, 0, w, h);
         [self addSubview:_currentCell];
         return;
     }
     
-    _willShowCell = [self.dataSource marqueeView:self cellForRow:willShowIndex];
+    _willShowCell = [self.dataSource rollingView:self cellForRow:willShowIndex];
     _willShowCell.frame = CGRectMake(0, h, w, h);
     [self addSubview:_willShowCell];
     [self.reuseCells removeObject:_currentCell];
@@ -188,12 +188,12 @@
 
 #pragma mark -- Action
 - (void)handleCellTapAction {
-    NSUInteger count = [self.dataSource numberOfRowsInMarqueeView:self];
+    NSUInteger count = [self.dataSource numberOfRowsInrollingView:self];
     if (_currentIndex > count - 1) {
         _currentIndex = 0;
     }
-    if ([self.delegate respondsToSelector:@selector(marqueeView:didClickRow:)]) {
-        [self.delegate marqueeView:self didClickRow:_currentIndex];
+    if ([self.delegate respondsToSelector:@selector(rollingView:didClickRow:)]) {
+        [self.delegate rollingView:self didClickRow:_currentIndex];
     }
 }
 

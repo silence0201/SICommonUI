@@ -16,8 +16,9 @@ FOUNDATION_EXPORT const unsigned char SIUIKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SIUIKit/PublicHeader.h>
 
-#import <SIUIKit/SIPopView.h>
-#import <SIUIKit/SIShadowView.h>
-#import <SIUIKit/SIPopoverView.h>
+#import <SIUIKit/SIPopView.h>   // 弹出框
+#import <SIUIKit/SIShadowView.h>  // 阴影和圆角处理视图
+#import <SIUIKit/SIPopoverView.h>  // 类似微信右上角弹出框
+#import <SIUIKit/SIRollingView.h>  // 上下滚动通知
 
 

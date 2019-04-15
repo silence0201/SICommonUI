@@ -1,5 +1,5 @@
 //
-//  SIMarqueeView.h
+//  SIRollingView.h
 //  SIUIKit
 //
 //  Created by Silence on 2019/4/15.
@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class SIMarqueeView;
-@interface SIMarqueeViewCell : UIView
+@class SIRollingView;
+@interface SIRollingViewCell : UIView
 
 @property (nonatomic, strong, readonly) UIView   *contentView;
 @property (nonatomic, strong, readonly) UILabel  *textLabel;
@@ -22,22 +22,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@protocol SIMarqueeViewDataSource <NSObject>
+@protocol SIRollingViewDataSource <NSObject>
 @required
-- (NSInteger)numberOfRowsInMarqueeView:(SIMarqueeView *)marqueeView;
-- (SIMarqueeViewCell *)marqueeView:(SIMarqueeView*)marqueeView cellForRow:(NSUInteger)index;
+- (NSInteger)numberOfRowsInrollingView:(SIRollingView *)rollingView;
+- (SIRollingViewCell *)rollingView:(SIRollingView*)rollingView cellForRow:(NSUInteger)index;
 @end
 
-@protocol SIMarqueeViewDelegate <NSObject>
+@protocol SIRollingViewDelegate <NSObject>
 @optional
-- (void)marqueeView:(SIMarqueeView *)marqueeView didClickRow:(NSUInteger)index;
+- (void)rollingView:(SIRollingView *)rollingView didClickRow:(NSUInteger)index;
 
 @end
 
-@interface SIMarqueeView : UIView
+@interface SIRollingView : UIView
 
-@property (nonatomic, weak) id<SIMarqueeViewDataSource> dataSource;
-@property (nonatomic, weak) id<SIMarqueeViewDelegate> delegate;
+@property (nonatomic, weak) id<SIRollingViewDataSource> dataSource;
+@property (nonatomic, weak) id<SIRollingViewDelegate> delegate;
 
 /// 停留时间,默认3s
 @property (nonatomic, assign) NSTimeInterval stayInterval;

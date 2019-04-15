@@ -23,8 +23,8 @@
 /* Begin PBXBuildFile section */
 		E8012013226209990051E3E6 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8012012226209990051E3E6 /* Test.storyboard */; };
 		E8012019226210660051E3E6 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8012018226210660051E3E6 /* test.jpg */; };
-		E88861FC2264C43D00B62B08 /* SIMarqueeView.h in Headers */ = {isa = PBXBuildFile; fileRef = E88861FA2264C43D00B62B08 /* SIMarqueeView.h */; };
-		E88861FD2264C43D00B62B08 /* SIMarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88861FB2264C43D00B62B08 /* SIMarqueeView.m */; };
+		E88861FC2264C43D00B62B08 /* SIRollingView.h in Headers */ = {isa = PBXBuildFile; fileRef = E88861FA2264C43D00B62B08 /* SIRollingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E88861FD2264C43D00B62B08 /* SIRollingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E88861FB2264C43D00B62B08 /* SIRollingView.m */; };
 		E8A0BE9C2261DDB5004F5764 /* SIUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A0BE9A2261DDB5004F5764 /* SIUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8A0BEB52261DF42004F5764 /* SIPopoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A0BEA92261DF41004F5764 /* SIPopoverView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8A0BEB72261DF42004F5764 /* SIPopoverViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A0BEAB2261DF41004F5764 /* SIPopoverViewCell.h */; };
@@ -39,8 +39,8 @@
 /* Begin PBXFileReference section */
 		E8012012226209990051E3E6 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
 		E8012018226210660051E3E6 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
-		E88861FA2264C43D00B62B08 /* SIMarqueeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIMarqueeView.h; sourceTree = "<group>"; };
-		E88861FB2264C43D00B62B08 /* SIMarqueeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIMarqueeView.m; sourceTree = "<group>"; };
+		E88861FA2264C43D00B62B08 /* SIRollingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIRollingView.h; sourceTree = "<group>"; };
+		E88861FB2264C43D00B62B08 /* SIRollingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIRollingView.m; sourceTree = "<group>"; };
 		E8A0BE972261DDB5004F5764 /* SIUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SIUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A0BE9A2261DDB5004F5764 /* SIUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIUIKit.h; sourceTree = "<group>"; };
 		E8A0BE9B2261DDB5004F5764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -77,8 +77,8 @@
 		E88861F92264C41400B62B08 /* SIMarqueeView */ = {
 			isa = PBXGroup;
 			children = (
-				E88861FA2264C43D00B62B08 /* SIMarqueeView.h */,
-				E88861FB2264C43D00B62B08 /* SIMarqueeView.m */,
+				E88861FA2264C43D00B62B08 /* SIRollingView.h */,
+				E88861FB2264C43D00B62B08 /* SIRollingView.m */,
 			);
 			path = SIMarqueeView;
 			sourceTree = "<group>";
@@ -169,10 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8A0BE9C2261DDB5004F5764 /* SIUIKit.h in Headers */,
+				E88861FC2264C43D00B62B08 /* SIRollingView.h in Headers */,
 				E8A0BEB52261DF42004F5764 /* SIPopoverView.h in Headers */,
 				E8A0BEBE2261DF42004F5764 /* SIShadowView.h in Headers */,
 				E8A0BEBB2261DF42004F5764 /* SIPopView.h in Headers */,
-				E88861FC2264C43D00B62B08 /* SIMarqueeView.h in Headers */,
 				E8A0BEB72261DF42004F5764 /* SIPopoverViewCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,7 +302,7 @@
 				E8A0BEBD2261DF42004F5764 /* SIShadowView.m in Sources */,
 				E8A0BEBC2261DF42004F5764 /* SIPopView.m in Sources */,
 				E8A0BEB82261DF42004F5764 /* SIPopoverView.m in Sources */,
-				E88861FD2264C43D00B62B08 /* SIMarqueeView.m in Sources */,
+				E88861FD2264C43D00B62B08 /* SIRollingView.m in Sources */,
 				E8A0BEBA2261DF42004F5764 /* SIPopoverViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
