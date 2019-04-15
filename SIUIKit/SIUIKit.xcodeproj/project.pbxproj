@@ -74,13 +74,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E88861F92264C41400B62B08 /* SIMarqueeView */ = {
+		E88861F92264C41400B62B08 /* SIRollingView */ = {
 			isa = PBXGroup;
 			children = (
 				E88861FA2264C43D00B62B08 /* SIRollingView.h */,
 				E88861FB2264C43D00B62B08 /* SIRollingView.m */,
 			);
-			path = SIMarqueeView;
+			path = SIRollingView;
 			sourceTree = "<group>";
 		};
 		E8A0BE8D2261DDB5004F5764 = {
@@ -104,7 +104,7 @@
 		E8A0BE992261DDB5004F5764 /* SIUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				E88861F92264C41400B62B08 /* SIMarqueeView */,
+				E88861F92264C41400B62B08 /* SIRollingView */,
 				E8A0BEA82261DF41004F5764 /* SIPopoverView */,
 				E8A0BEAF2261DF41004F5764 /* SIPopView */,
 				E8A0BEB22261DF41004F5764 /* SIShadowView */,
