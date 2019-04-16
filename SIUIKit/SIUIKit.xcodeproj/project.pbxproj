@@ -34,6 +34,8 @@
 		E8A0BEBC2261DF42004F5764 /* SIPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A0BEB12261DF41004F5764 /* SIPopView.m */; };
 		E8A0BEBD2261DF42004F5764 /* SIShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A0BEB32261DF41004F5764 /* SIShadowView.m */; };
 		E8A0BEBE2261DF42004F5764 /* SIShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A0BEB42261DF41004F5764 /* SIShadowView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8BE8EB722661DD6007EF387 /* SIPickView.h in Headers */ = {isa = PBXBuildFile; fileRef = E8BE8EB522661DD6007EF387 /* SIPickView.h */; };
+		E8BE8EB822661DD6007EF387 /* SIPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BE8EB622661DD6007EF387 /* SIPickView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		E8A0BEB42261DF41004F5764 /* SIShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIShadowView.h; sourceTree = "<group>"; };
 		E8AB17612262053900C2A230 /* SIUIKitBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIUIKitBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8AB17632262053900C2A230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8BE8EB522661DD6007EF387 /* SIPickView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIPickView.h; sourceTree = "<group>"; };
+		E8BE8EB622661DD6007EF387 /* SIPickView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIPickView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		E8A0BE992261DDB5004F5764 /* SIUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				E8BE8EB422661DBE007EF387 /* SIPickView */,
 				E88861F92264C41400B62B08 /* SIRollingView */,
 				E8A0BEA82261DF41004F5764 /* SIPopoverView */,
 				E8A0BEAF2261DF41004F5764 /* SIPopView */,
@@ -161,6 +166,15 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		E8BE8EB422661DBE007EF387 /* SIPickView */ = {
+			isa = PBXGroup;
+			children = (
+				E8BE8EB522661DD6007EF387 /* SIPickView.h */,
+				E8BE8EB622661DD6007EF387 /* SIPickView.m */,
+			);
+			path = SIPickView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -172,6 +186,7 @@
 				E88861FC2264C43D00B62B08 /* SIRollingView.h in Headers */,
 				E8A0BEB52261DF42004F5764 /* SIPopoverView.h in Headers */,
 				E8A0BEBE2261DF42004F5764 /* SIShadowView.h in Headers */,
+				E8BE8EB722661DD6007EF387 /* SIPickView.h in Headers */,
 				E8A0BEBB2261DF42004F5764 /* SIPopView.h in Headers */,
 				E8A0BEB72261DF42004F5764 /* SIPopoverViewCell.h in Headers */,
 			);
@@ -304,6 +319,7 @@
 				E8A0BEB82261DF42004F5764 /* SIPopoverView.m in Sources */,
 				E88861FD2264C43D00B62B08 /* SIRollingView.m in Sources */,
 				E8A0BEBA2261DF42004F5764 /* SIPopoverViewCell.m in Sources */,
+				E8BE8EB822661DD6007EF387 /* SIPickView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
