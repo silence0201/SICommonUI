@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol SIRollingViewDataSource <NSObject>
 @required
-- (NSInteger)numberOfRowsInrollingView:(SIRollingView *)rollingView;
+- (NSInteger)numberOfRowsInRollingView:(SIRollingView *)rollingView;
 - (SIRollingViewCell *)rollingView:(SIRollingView*)rollingView cellForRow:(NSUInteger)index;
 @end
 
@@ -46,6 +46,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)registerClass:(Class)cellClass forCellReuseIdentifier:(NSString *)identifier;
 - (void)registerNib:(UINib *)nib forCellReuseIdentifier:(NSString *)identifier;
+
+- (__kindof SIRollingViewCell *)dequeueReusableCellWithIdentifier:(NSString *)identifier;
 
 - (void)reloadDataAndStartRoll;
 - (void)stopRoll;

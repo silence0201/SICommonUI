@@ -92,7 +92,7 @@
 - (void)reloadDataAndStartRoll {
     [self stopRoll];
     [self layoutCurrentCellAndWillShowCell];
-    NSUInteger count = [self.dataSource numberOfRowsInrollingView:self];
+    NSUInteger count = [self.dataSource numberOfRowsInRollingView:self];
     if (count && count < 2) {
         return;
     }
@@ -124,7 +124,7 @@
 }
 
 - (void)layoutCurrentCellAndWillShowCell {
-    NSUInteger count = (int)[self.dataSource numberOfRowsInrollingView:self];
+    NSUInteger count = (int)[self.dataSource numberOfRowsInRollingView:self];
     if (_currentIndex > count - 1) {
         _currentIndex = 0;
     }
@@ -188,7 +188,7 @@
 
 #pragma mark -- Action
 - (void)handleCellTapAction {
-    NSUInteger count = [self.dataSource numberOfRowsInrollingView:self];
+    NSUInteger count = [self.dataSource numberOfRowsInRollingView:self];
     if (_currentIndex > count - 1) {
         _currentIndex = 0;
     }
