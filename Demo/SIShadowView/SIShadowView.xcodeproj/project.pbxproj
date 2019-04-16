@@ -7,120 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E801201B226211EF0051E3E6 /* SIUIKitBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E801201A226211EF0051E3E6 /* SIUIKitBundle.bundle */; };
-		E8A0BEC72261E02A004F5764 /* SIUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A0BEC62261E02A004F5764 /* SIUIKit.framework */; };
-		E8A684E8225F7CBF00D4650C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A684E7225F7CBF00D4650C /* AppDelegate.m */; };
-		E8A684EB225F7CBF00D4650C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A684EA225F7CBF00D4650C /* ViewController.m */; };
-		E8A684EE225F7CBF00D4650C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A684EC225F7CBF00D4650C /* Main.storyboard */; };
-		E8A684F0225F7CC000D4650C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8A684EF225F7CC000D4650C /* Assets.xcassets */; };
-		E8A684F3225F7CC000D4650C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8A684F1225F7CC000D4650C /* LaunchScreen.storyboard */; };
-		E8A684F6225F7CC000D4650C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8A684F5225F7CC000D4650C /* main.m */; };
+		E84977F5225E407D00D39D25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E84977F4225E407D00D39D25 /* AppDelegate.m */; };
+		E84977F8225E407D00D39D25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E84977F7225E407D00D39D25 /* ViewController.m */; };
+		E84977FB225E407D00D39D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84977F9225E407D00D39D25 /* Main.storyboard */; };
+		E84977FD225E407E00D39D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E84977FC225E407E00D39D25 /* Assets.xcassets */; };
+		E8497800225E407E00D39D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84977FE225E407E00D39D25 /* LaunchScreen.storyboard */; };
+		E8497803225E407E00D39D25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8497802225E407E00D39D25 /* main.m */; };
+		E8BE8E7D22660C86007EF387 /* SIUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BE8E7C22660C86007EF387 /* SIUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E801201A226211EF0051E3E6 /* SIUIKitBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SIUIKitBundle.bundle; path = ../../SIUIKit/Products/SIUIKitBundle.bundle; sourceTree = "<group>"; };
-		E8A0BEC62261E02A004F5764 /* SIUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SIUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8A684E3225F7CBF00D4650C /* SIPopoverView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIPopoverView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8A684E6225F7CBF00D4650C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E8A684E7225F7CBF00D4650C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E8A684E9225F7CBF00D4650C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E8A684EA225F7CBF00D4650C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E8A684ED225F7CBF00D4650C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E8A684EF225F7CC000D4650C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E8A684F2225F7CC000D4650C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E8A684F4225F7CC000D4650C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8A684F5225F7CC000D4650C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E84977F0225E407D00D39D25 /* SIShadowView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIShadowView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E84977F3225E407D00D39D25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E84977F4225E407D00D39D25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E84977F6225E407D00D39D25 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E84977F7225E407D00D39D25 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E84977FA225E407D00D39D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E84977FC225E407E00D39D25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E84977FF225E407E00D39D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8497801225E407E00D39D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8497802225E407E00D39D25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8AB17362262022500C2A230 /* SIUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SIUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8BE8E7C22660C86007EF387 /* SIUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SIUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E8A684E0225F7CBF00D4650C /* Frameworks */ = {
+		E84977ED225E407D00D39D25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8A0BEC72261E02A004F5764 /* SIUIKit.framework in Frameworks */,
+				E8BE8E7D22660C86007EF387 /* SIUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E8A0BEC52261E02A004F5764 /* Frameworks */ = {
+		E84977E7225E407D00D39D25 = {
 			isa = PBXGroup;
 			children = (
-				E8A0BEC62261E02A004F5764 /* SIUIKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E8A684DA225F7CBF00D4650C = {
-			isa = PBXGroup;
-			children = (
-				E8A684E5225F7CBF00D4650C /* SIPopoverView */,
-				E8A684E4225F7CBF00D4650C /* Products */,
-				E8A0BEC52261E02A004F5764 /* Frameworks */,
+				E84977F2225E407D00D39D25 /* SIShadowView */,
+				E84977F1225E407D00D39D25 /* Products */,
+				E8A0BEBF2261E00C004F5764 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		E8A684E4225F7CBF00D4650C /* Products */ = {
+		E84977F1225E407D00D39D25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E8A684E3225F7CBF00D4650C /* SIPopoverView.app */,
+				E84977F0225E407D00D39D25 /* SIShadowView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E8A684E5225F7CBF00D4650C /* SIPopoverView */ = {
+		E84977F2225E407D00D39D25 /* SIShadowView */ = {
 			isa = PBXGroup;
 			children = (
-				E801201A226211EF0051E3E6 /* SIUIKitBundle.bundle */,
-				E8A684E6225F7CBF00D4650C /* AppDelegate.h */,
-				E8A684E7225F7CBF00D4650C /* AppDelegate.m */,
-				E8A684E9225F7CBF00D4650C /* ViewController.h */,
-				E8A684EA225F7CBF00D4650C /* ViewController.m */,
-				E8A684EC225F7CBF00D4650C /* Main.storyboard */,
-				E8A684EF225F7CC000D4650C /* Assets.xcassets */,
-				E8A684F1225F7CC000D4650C /* LaunchScreen.storyboard */,
-				E8A684F4225F7CC000D4650C /* Info.plist */,
-				E8A684F5225F7CC000D4650C /* main.m */,
+				E84977F3225E407D00D39D25 /* AppDelegate.h */,
+				E84977F4225E407D00D39D25 /* AppDelegate.m */,
+				E84977F6225E407D00D39D25 /* ViewController.h */,
+				E84977F7225E407D00D39D25 /* ViewController.m */,
+				E84977F9225E407D00D39D25 /* Main.storyboard */,
+				E84977FC225E407E00D39D25 /* Assets.xcassets */,
+				E84977FE225E407E00D39D25 /* LaunchScreen.storyboard */,
+				E8497801225E407E00D39D25 /* Info.plist */,
+				E8497802225E407E00D39D25 /* main.m */,
 			);
-			path = SIPopoverView;
+			path = SIShadowView;
+			sourceTree = "<group>";
+		};
+		E8A0BEBF2261E00C004F5764 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8BE8E7C22660C86007EF387 /* SIUIKit.framework */,
+				E8AB17362262022500C2A230 /* SIUIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E8A684E2225F7CBF00D4650C /* SIPopoverView */ = {
+		E84977EF225E407D00D39D25 /* SIShadowView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E8A684F9225F7CC000D4650C /* Build configuration list for PBXNativeTarget "SIPopoverView" */;
+			buildConfigurationList = E8497806225E407E00D39D25 /* Build configuration list for PBXNativeTarget "SIShadowView" */;
 			buildPhases = (
-				E8A684DF225F7CBF00D4650C /* Sources */,
-				E8A684E0225F7CBF00D4650C /* Frameworks */,
-				E8A684E1225F7CBF00D4650C /* Resources */,
+				E84977EC225E407D00D39D25 /* Sources */,
+				E84977ED225E407D00D39D25 /* Frameworks */,
+				E84977EE225E407D00D39D25 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SIPopoverView;
-			productName = SIPopoverView;
-			productReference = E8A684E3225F7CBF00D4650C /* SIPopoverView.app */;
+			name = SIShadowView;
+			productName = SIShadowView;
+			productReference = E84977F0225E407D00D39D25 /* SIShadowView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E8A684DB225F7CBF00D4650C /* Project object */ = {
+		E84977E8225E407D00D39D25 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Silence;
 				TargetAttributes = {
-					E8A684E2225F7CBF00D4650C = {
+					E84977EF225E407D00D39D25 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = E8A684DE225F7CBF00D4650C /* Build configuration list for PBXProject "SIPopoverView" */;
+			buildConfigurationList = E84977EB225E407D00D39D25 /* Build configuration list for PBXProject "SIShadowView" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -128,56 +127,55 @@
 				en,
 				Base,
 			);
-			mainGroup = E8A684DA225F7CBF00D4650C;
-			productRefGroup = E8A684E4225F7CBF00D4650C /* Products */;
+			mainGroup = E84977E7225E407D00D39D25;
+			productRefGroup = E84977F1225E407D00D39D25 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E8A684E2225F7CBF00D4650C /* SIPopoverView */,
+				E84977EF225E407D00D39D25 /* SIShadowView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E8A684E1225F7CBF00D4650C /* Resources */ = {
+		E84977EE225E407D00D39D25 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E801201B226211EF0051E3E6 /* SIUIKitBundle.bundle in Resources */,
-				E8A684F3225F7CC000D4650C /* LaunchScreen.storyboard in Resources */,
-				E8A684F0225F7CC000D4650C /* Assets.xcassets in Resources */,
-				E8A684EE225F7CBF00D4650C /* Main.storyboard in Resources */,
+				E8497800225E407E00D39D25 /* LaunchScreen.storyboard in Resources */,
+				E84977FD225E407E00D39D25 /* Assets.xcassets in Resources */,
+				E84977FB225E407D00D39D25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E8A684DF225F7CBF00D4650C /* Sources */ = {
+		E84977EC225E407D00D39D25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8A684EB225F7CBF00D4650C /* ViewController.m in Sources */,
-				E8A684F6225F7CC000D4650C /* main.m in Sources */,
-				E8A684E8225F7CBF00D4650C /* AppDelegate.m in Sources */,
+				E84977F8225E407D00D39D25 /* ViewController.m in Sources */,
+				E8497803225E407E00D39D25 /* main.m in Sources */,
+				E84977F5225E407D00D39D25 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E8A684EC225F7CBF00D4650C /* Main.storyboard */ = {
+		E84977F9225E407D00D39D25 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E8A684ED225F7CBF00D4650C /* Base */,
+				E84977FA225E407D00D39D25 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		E8A684F1225F7CC000D4650C /* LaunchScreen.storyboard */ = {
+		E84977FE225E407E00D39D25 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E8A684F2225F7CC000D4650C /* Base */,
+				E84977FF225E407E00D39D25 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -185,7 +183,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E8A684F7225F7CC000D4650C /* Debug */ = {
+		E8497804225E407E00D39D25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -244,7 +242,7 @@
 			};
 			name = Debug;
 		};
-		E8A684F8225F7CC000D4650C /* Release */ = {
+		E8497805225E407E00D39D25 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -297,33 +295,33 @@
 			};
 			name = Release;
 		};
-		E8A684FA225F7CC000D4650C /* Debug */ = {
+		E8497807225E407E00D39D25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SIPopoverView/Info.plist;
+				INFOPLIST_FILE = SIShadowView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.silence.SIPopoverView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.SIShadowView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E8A684FB225F7CC000D4650C /* Release */ = {
+		E8497808225E407E00D39D25 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SIPopoverView/Info.plist;
+				INFOPLIST_FILE = SIShadowView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.silence.SIPopoverView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.silence.SIShadowView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -332,25 +330,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E8A684DE225F7CBF00D4650C /* Build configuration list for PBXProject "SIPopoverView" */ = {
+		E84977EB225E407D00D39D25 /* Build configuration list for PBXProject "SIShadowView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E8A684F7225F7CC000D4650C /* Debug */,
-				E8A684F8225F7CC000D4650C /* Release */,
+				E8497804225E407E00D39D25 /* Debug */,
+				E8497805225E407E00D39D25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E8A684F9225F7CC000D4650C /* Build configuration list for PBXNativeTarget "SIPopoverView" */ = {
+		E8497806225E407E00D39D25 /* Build configuration list for PBXNativeTarget "SIShadowView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E8A684FA225F7CC000D4650C /* Debug */,
-				E8A684FB225F7CC000D4650C /* Release */,
+				E8497807225E407E00D39D25 /* Debug */,
+				E8497808225E407E00D39D25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E8A684DB225F7CBF00D4650C /* Project object */;
+	rootObject = E84977E8225E407D00D39D25 /* Project object */;
 }

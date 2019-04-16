@@ -2,15 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Demo/SIShadowView/SIShadowView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Demo/SIPopView/SIPopView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Demo/SIPopoverView/SIPopoverView.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SIUIKit/SIUIKit.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:SIShadowView/SIShadowView.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:SIPopView/SIPopView.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:SIPopoverView/SIPopoverView.xcodeproj">
    </FileRef>
 </Workspace>
