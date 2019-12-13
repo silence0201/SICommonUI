@@ -19,10 +19,10 @@ typedef NS_ENUM(NSUInteger, SIPopoverViewArrowStyle) {
     SIPopoverViewArrowStyleTriangle   // 菱角
 };
 
-// 重用Cell标识,用于重写自定义样式
-FOUNDATION_EXPORT NSString *kPopoverCellReuseId;
-
 NS_ASSUME_NONNULL_BEGIN
+
+// 重用Cell标识,用于重写自定义样式
+FOUNDATION_EXPORT NSString * const kPopoverCellReuseId;
 
 @class SIPopoverAction;
 typedef void(^PopClickAction)(SIPopoverAction *action);
